@@ -51,7 +51,7 @@ export const selectFilteredTodos = (state) => {
     return state.todo.items.filter((item) => !item.completed); 
   } else if (state.todo.activeFilter === "completed") {
     return state.todo.items.filter((item) => item.completed);
-  }
+  } 
 };
 
 export const { addTodo, destroy, toggle, changeActiveFilter, removeAll } =
